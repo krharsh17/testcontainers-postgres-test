@@ -185,9 +185,9 @@ public class CustomerTest {
     @Test
     public void checkIfCreateNewLocalCustomerWorks() {
 
-        customerRepository.createNewLocalCustomer("Michael Scott", "michael@dundermifflin.com", 49);
+        customerRepository.createNewLocalCustomer("Michael Scott", "michael@scott.com", 49);
 
-        List<Customer> customerList = customerRepository.findLocalCustomers();
+        List<Customer> customerList = customerRepository.findByEmailAddress("michael@scott.com");
 
         Assertions.assertEquals(4, customerList.size());
 

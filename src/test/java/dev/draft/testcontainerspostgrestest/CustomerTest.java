@@ -15,7 +15,7 @@ public class CustomerTest {
 
 
     /**
-     * Basic test case to check if the data initialization method works and loads data correctly into the table
+     * Basic test case to check if the customer table exists
      */
     @Test
     public void checkIfTableIsCreated() {

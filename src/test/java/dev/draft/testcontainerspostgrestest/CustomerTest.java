@@ -190,6 +190,7 @@ public class CustomerTest {
         List<Customer> customerList = customerRepository.findByEmailAddress("michael@scott.com");
 
         Assertions.assertEquals(1, customerList.size());
+        Assertions.assertEquals("US", customerList.get(0).getCountry());
 
     }
 }
